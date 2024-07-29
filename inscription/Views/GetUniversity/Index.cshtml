@@ -1,0 +1,26 @@
+<h2>Hola desde Universities</h2>
+@{
+    ViewData["Title"] = "University";
+}
+
+
+<h2>University</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name University</th>
+        </tr>
+    </thead>
+    <tbody>
+         @foreach (var u in Model)
+        {
+            <tr>
+                <td>@u.Id</td>
+                <td>@u.NameUniversity</td>
+            </tr>
+        }
+        </tr>
+    </tbody>
+</table>
